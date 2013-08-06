@@ -19,7 +19,7 @@ class Wootook_Core_Mvc_Controller_Request_Http
     {
         parent::__construct($options);
 
-        $this->_baseUrl = Wootook::getBaseUrl('link');
+        $this->_baseUrl = Wootook::getBaseUrl('base');
         if ($this->_baseUrl === null) {
             $this->_baseUrl = 'http://' . $this->getServer('HTTP_HOST') . $this->getServer('REQUEST_URI');
         }
